@@ -6,10 +6,12 @@ export default function () {
    return (
       <div className="bg-red-500 w-full min-h-screen">
          <div className="w-full min-h-screen flex justify-center text-white bg-BgPrimary">
-            <main className=" w-full min-h-screen max-w-screen-screenPrimary px-14">
+            <main className="relative w-full min-h-screen max-w-screen-screenPrimary px-14 overflow-clip">
+               {/* --------------- NEW COMMENT --------------- */}
+
                <section
                   id="Partners"
-                  className="relative w-full "
+                  className="relative w-full  my-20 "
                >
                   <TextPrimary className="text-5xl text-center z-10">
                      PARTNERS
@@ -18,12 +20,15 @@ export default function () {
                      <TextPrimary className="text-[190px] text-center overflow-clip text-black">
                         MINEBLUE
                      </TextPrimary>
-
-                     <img
-                        className="  h-[400px] w-[400px]  absolute -top-10 opacity-60"
-                        src="/Images/Mineblue/Rectangle20.png"
-                     />
                   </div>
+                  <img
+                     className="absolute z-20 -bottom-[140%] right-[45%] opacity-60 scale-[1]"
+                     src="/Images/Mineblue/Rectangle2233.png"
+                  />
+                  <img
+                     className="absolute    -bottom-[190%] -right-[30%] opacity-30 scale-[0.6]"
+                     src="/Images/Mineblue/Rectangle12.png"
+                  />
                   <div className="relative flex items-center justify-center space-x-14 z-10">
                      <div className="">
                         <img
@@ -46,11 +51,10 @@ export default function () {
                   </div>
                </section>
 
-               {/* --------------- NEW COMMENT --------------- */}
-
+               {/* --------------- NEW COMMENT --------------- */} 
                <section
                   id="Purchase-Mineblue-Token"
-                  className="py-16"
+                  className="my-20 relative z-20"
                >
                   <div className="border-t-8 border-[#11365B] overflow-clip relative bg-black rounded-b-[100px] flex items-center justify-between">
                      <div className="w-1/2 p-10 space-y-10">
@@ -118,6 +122,120 @@ export default function () {
                         className="absolute -right-[20%] w-[90%] opacity-55"
                         src="/Images/Mineblue/Rectangle12.png"
                      />
+                  </div>
+               </section>
+
+               {/* --------------- NEW COMMENT --------------- */}
+
+               <section className="relative my-20  w-full ">
+                  <div className="flex justify-center mb-16  ">
+                     <div className="relative   ">
+                        <TextPrimary className="relative z-10 text-5xl text-center">
+                           WHY CHOOSE US
+                        </TextPrimary>
+                        <img
+                           className="absolute -right-14 top-0 z-0 opacity-35"
+                           src="/Images/Mineblue/Rectangle1010.png"
+                        />
+                     </div>
+                  </div>
+
+                  <div className="  absolute w-auto -top-12 -right-16 opacity-20  ">
+                     <img
+                        className=" "
+                        src="/Images/Mineblue/file3.png"
+                     />
+                  </div>
+
+                  <div className="pb-[155px] flex items-center justify-between px-6 relative z-10">
+                     {/* --------------- Card 1 --------------- */}
+                     <div className="flex relative flex-col items-center text-center   clip-custom justify-evenly w-[300px] h-[313px]  space-y-3 px-3 py-3  ">
+                        <div className="h-[50%] flex flex-col justify-center ">
+                           <div className="  w-28 h-28 rounded-full bg-[#111112] border-opacity-20 border-white border flex items-center justify-center">
+                              <img
+                                 className=""
+                                 src="/Images/Mineblue/secureFarming.png"
+                              />
+                           </div>
+                        </div>
+                        <div className="h-[50%] space-y-2">
+                           <TextPrimary className="text-xl">
+                              Secure Farming
+                           </TextPrimary>
+
+                           <TextSecondary className="text-base">
+                              Multiple strategies to farm APY and Points
+                              combined in a top-tier user interface.
+                           </TextSecondary>
+                        </div>
+                     </div>
+                     {/* --------------- Card 2 --------------- */}
+                     <div className="flex flex-col items-center text-center  clip-custom justify-evenly w-[300px] h-[313px]  space-y-3 px-3 py-3   ">
+                        <div className="h-[50%] flex flex-col justify-center ">
+                           <div className="  w-28 h-28 rounded-full bg-[#111112] border-opacity-20 border-white border flex items-center justify-center">
+                              <img
+                                 className=""
+                                 src="/Images/Mineblue/ai-technology.png"
+                              />
+                           </div>
+                        </div>
+                        <div className="h-[50%] space-y-2">
+                           <TextPrimary className="text-xl">
+                              AI-Powered
+                           </TextPrimary>
+
+                           <TextSecondary className="text-base">
+                              AI portfolio creation tailored to user preferences
+                           </TextSecondary>
+                        </div>
+                     </div>
+                     {/* --------------- Card 3 --------------- */}
+                     <div className="flex flex-col items-center text-center  clip-custom justify-evenly w-[300px] h-[313px]  space-y-3 px-3 py-3    ">
+                        <div className="h-[50%] flex flex-col justify-center ">
+                           <div className="  w-28 h-28 rounded-full bg-[#111112] border-opacity-20 border-white border flex items-center justify-center">
+                              <img
+                                 className=""
+                                 src="/Images/Mineblue/blockchainicon.png"
+                              />
+                           </div>
+                        </div>
+                        <div className="h-[50%] space-y-2">
+                           <TextPrimary className="text-xl">
+                              Accessible Features
+                           </TextPrimary>
+
+                           <TextSecondary className="text-base">
+                              Effortless deposits and swift withdrawals
+                           </TextSecondary>
+                        </div>
+                     </div>
+
+                     {/* --------------- Card 4 --------------- */}
+                     <div className="flex flex-col items-center text-center  clip-custom justify-evenly w-[300px] h-[313px]  space-y-3 px-3 py-3   ">
+                        <div className="h-[50%] flex flex-col justify-center ">
+                           <div className="  w-28 h-28 rounded-full bg-[#111112] border-opacity-20 border-white border flex items-center justify-center">
+                              <img
+                                 className=""
+                                 src="/Images/Mineblue/polygonicon.png"
+                              />
+                           </div>
+                        </div>
+                        <div className="h-[50%] space-y-2">
+                           <TextPrimary className="text-xl">
+                              Sustainable Platform
+                           </TextPrimary>
+
+                           <TextSecondary className="text-base">
+                              Native yield with an APY of 4% for ETH and 5% for
+                              stablecoins
+                           </TextSecondary>
+                        </div>
+                     </div>
+                  </div>
+                  <div className=" absolute w-full bottom-0 ">
+                     <TextPrimary className="text-[200px]  scale-[1.05] text-center overflow-clip text-black">
+                        MINEBLUE
+                     </TextPrimary>
                   </div>
                </section>
 
@@ -352,121 +470,6 @@ export default function () {
                </section>
 
                <section className="h-80 w-full bg-gray-600 my-10"></section>
-
-               {/* --------------- NEW COMMENT --------------- */}
-
-               <section className="relative   w-full ">
-                  <div className="flex justify-center mb-16  ">
-                     <div className="relative   ">
-                        <TextPrimary className="relative z-10 text-5xl text-center">
-                           WHY CHOOSE US
-                        </TextPrimary>
-                        <img
-                           className="absolute right-2 top-0 z-0 opacity-35"
-                           src="/Images/Mineblue/Rectangle13.png"
-                        />
-                     </div>
-                  </div>
-
-                  <div className="  absolute w-auto -top-12 -right-16 opacity-20  ">
-                     <img
-                        className=" "
-                        src="/Images/Mineblue/file3.png"
-                     />
-                  </div>
-
-                  <div className="pb-[155px] flex items-center justify-between px-6 relative z-10">
-                     {/* --------------- Card 1 --------------- */}
-                     <div className="flex relative flex-col items-center text-center   clip-custom justify-evenly w-[300px] h-[313px]  space-y-3 px-3 py-3 bg-black rounded-xl ">
-                        <div className="h-[50%] flex flex-col justify-center ">
-                           <div className="  w-28 h-28 rounded-full bg-[#111112] border-opacity-20 border-white border flex items-center justify-center">
-                              <img
-                                 className=""
-                                 src="/Images/Mineblue/secureFarming.png"
-                              />
-                           </div>
-                        </div>
-                        <div className="h-[50%] space-y-2">
-                           <TextPrimary className="text-xl">
-                              Secure Farming
-                           </TextPrimary>
-
-                           <TextSecondary className="text-base">
-                              Multiple strategies to farm APY and Points
-                              combined in a top-tier user interface.
-                           </TextSecondary>
-                        </div>
-                     </div>
-                     {/* --------------- Card 2 --------------- */}
-                     <div className="flex flex-col items-center text-center  clip-custom justify-evenly w-[300px] h-[313px]  space-y-3 px-3 py-3 bg-black rounded-xl">
-                        <div className="h-[50%] flex flex-col justify-center ">
-                           <div className="  w-28 h-28 rounded-full bg-[#111112] border-opacity-20 border-white border flex items-center justify-center">
-                              <img
-                                 className=""
-                                 src="/Images/Mineblue/ai-technology.png"
-                              />
-                           </div>
-                        </div>
-                        <div className="h-[50%] space-y-2">
-                           <TextPrimary className="text-xl">
-                              AI-Powered
-                           </TextPrimary>
-
-                           <TextSecondary className="text-base">
-                              AI portfolio creation tailored to user preferences
-                           </TextSecondary>
-                        </div>
-                     </div>
-                     {/* --------------- Card 3 --------------- */}
-                     <div className="flex flex-col items-center text-center  clip-custom justify-evenly w-[300px] h-[313px]  space-y-3 px-3 py-3 bg-black rounded-xl">
-                        <div className="h-[50%] flex flex-col justify-center ">
-                           <div className="  w-28 h-28 rounded-full bg-[#111112] border-opacity-20 border-white border flex items-center justify-center">
-                              <img
-                                 className=""
-                                 src="/Images/Mineblue/blockchainicon.png"
-                              />
-                           </div>
-                        </div>
-                        <div className="h-[50%] space-y-2">
-                           <TextPrimary className="text-xl">
-                              Accessible Features
-                           </TextPrimary>
-
-                           <TextSecondary className="text-base">
-                              Effortless deposits and swift withdrawals
-                           </TextSecondary>
-                        </div>
-                     </div>
-
-                     {/* --------------- Card 4 --------------- */}
-                     <div className="flex flex-col items-center text-center  clip-custom justify-evenly w-[300px] h-[313px]  space-y-3 px-3 py-3 bg-black rounded-xl">
-                        <div className="h-[50%] flex flex-col justify-center ">
-                           <div className="  w-28 h-28 rounded-full bg-[#111112] border-opacity-20 border-white border flex items-center justify-center">
-                              <img
-                                 className=""
-                                 src="/Images/Mineblue/polygonicon.png"
-                              />
-                           </div>
-                        </div>
-                        <div className="h-[50%] space-y-2">
-                           <TextPrimary className="text-xl">
-                              Sustainable Platform
-                           </TextPrimary>
-
-                           <TextSecondary className="text-base">
-                              Native yield with an APY of 4% for ETH and 5% for
-                              stablecoins
-                           </TextSecondary>
-                        </div>
-                     </div>
-                  </div>
-                  <div className=" absolute w-full bottom-0 ">
-                     <TextPrimary className="text-[200px]  scale-[1.05] text-center overflow-clip text-black">
-                        MINEBLUE
-                     </TextPrimary>
-                  </div>
-               </section>
-
                <section className="h-80 w-full bg-gray-600 my-10"></section>
                {/* --------------- NEW COMMENT --------------- */}
 
@@ -529,7 +532,7 @@ export default function () {
                      <div className="w-1/2 p-10 space-y-10">
                         <TextPrimary className="text-6xl leading-tight relative">
                            <div className="relative z-10">
-                           UNLOCK <br /> MINEBLUE <br /> RERRALS <br />{" "}
+                              UNLOCK <br /> MINEBLUE <br /> RERRALS <br />{" "}
                            </div>
                            <img
                               className="absolute right-32 top-24 z-0 opacity-35"
@@ -539,29 +542,93 @@ export default function () {
 
                         {/* --------------- NEW COMMENT --------------- */}
                         <div className="space-y-4">
-                          <TextSecondary>Earn up to 12% from all purchases made by the people you refer and even up to 5% the people they refer!</TextSecondary>
+                           <TextSecondary>
+                              Earn up to 12% from all purchases made by the
+                              people you refer and even up to 5% the people they
+                              refer!
+                           </TextSecondary>
                         </div>
-                        <div className="flex justify-center">
+                        <div className="flex justify-start">
                            <ButtonPrimary className="w-[425px]">
-                           CONNECT WALLET
+                              CONNECT WALLET
+                           </ButtonPrimary>
+                        </div>
+                     </div>
+                     {/* Background09 */}
+                     <div className="w-1/2  relative  flex justify-end">
+                        <img
+                           className="  z-10"
+                           src="/Images/Mineblue/cyberpunk-warrior-portrait.png"
+                        />
+                        <img
+                           className="absolute  right-0 "
+                           src="/Images/Mineblue/Background09.png"
+                        />
+                     </div>
+                  </div>
+               </section>
+               {/* --------------- NEW COMMENT --------------- */}
+
+               <section
+                  id="Purchase-Mineblue-Token"
+                  className="py-16"
+               >
+                  {" "}
+                  <div className="flex justify-center mb-16  ">
+                     <div className="relative   ">
+                        <TextPrimary className="relative z-10 text-5xl text-center">
+                           FAQ
+                        </TextPrimary>
+                        <img
+                           className="absolute left-3 top-3 z-0 opacity-35"
+                           src="/Images/Mineblue/RectangleFAQ.png"
+                        />
+                     </div>
+                  </div>
+                  <div className="     relative    flex items-center justify-between">
+                     <div className="w-1/2  relative  flex justify-start">
+                        <img
+                           className="  z-10"
+                           src="/Images/Mineblue/cyberpunk-man-warrior-portrait.png"
+                        />
+                        <img
+                           className="absolute  left-0 "
+                           src="/Images/Mineblue/Background099.png"
+                        />
+                     </div>
+
+                     <div className="w-1/2 p-10  space-y-10">
+                        <TextPrimary className="text-[80px] leading-tight relative">
+                           <div className="relative z-10">
+                              UNLOCK <br /> MINEBLUE <br /> RERRALS <br />{" "}
+                           </div>
+                           <img
+                              className="absolute left-10 top-32 z-0 opacity-35"
+                              src="/Images/Mineblue/Rectangle8FAQ.png"
+                           />
+                        </TextPrimary>
+
+                        {/* --------------- NEW COMMENT --------------- */}
+                        <div className="text-xl">
+                           <TextSecondary className="">
+                              Earn up to 12% from all purchases made by the
+                              people you refer and even up to 5% the people they
+                              refer!
+                           </TextSecondary>
+                        </div>
+                        <div className="flex justify-start">
+                           <ButtonPrimary className="w-[425px]">
+                              CONNECT WALLET
                            </ButtonPrimary>
                         </div>
                      </div>
 
-                     <div className="w-1/2  relative  flex justify-end">
-                        <img
-                           className="rounded-b-[100px] z-10"
-                           src="/Images/Mineblue/cyberpunk-warrior-portrait.png"
-                        />
-                     </div>
-
                      <img
-                        className="absolute -right-[20%] w-[90%] opacity-55"
-                        src="/Images/Mineblue/Rectangle12.png"
+                        className="absolute -left-[20%] w-[90%] opacity-55"
+                        src="/Images/Mineblue/Rectangle1111.png"
                      />
                   </div>
                </section>
-
             </main>
          </div>
       </div>
